@@ -1,28 +1,27 @@
-#include<stdio.h>
-int data()
+#include <stdio.h>
+int getdata()
 {
     int a;
-    printf("enter a number");
+    printf("Enter a number: ");
     scanf("%d",&a);
     return a;
 }
-int add(int a, int b)
-{
-    int c;
-    c=a+b;
-    return c;
 
+int logic(int a)
+{ 
+    int r;
+    r=a+1;
+    return r;
 }
-int op(int c)
+
+void output(int a, int r)
 {
-    printf("the sum is %d",c);
+    printf("%d + 1 = %d",a,r);
 }
+
 int main()
 {
-    int a,b,c;
-   a= data();
-   b= data();
-   c= add(a,b);
-    op(c);
-    return 0;
+    int a=getdata();
+    int r=logic(a);
+    output(a,r);
 }
