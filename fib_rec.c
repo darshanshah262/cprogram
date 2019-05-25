@@ -5,7 +5,7 @@ int main()
     int n,i,r;
     printf("Enter the number of terms\n");
     scanf("%d",&n);
-    for(i=0;i<=n;i++)
+    for(i=2;i<=n;i++)
     {
      r=fib(i);
      printf("%d\t",r);
