@@ -7,7 +7,7 @@ struct var
 struct var values()
 {
         struct var s1;
-        printf("Enter first number\n");
+        printf("Enter two number\n");
         scanf("%d%d",&s1.a,&s1.b);
         return s1;
 }
@@ -17,7 +17,7 @@ void reference(struct var *s)
         temp=s->a;
         s->a=s->b;
         s->b=temp;
-        printf("Afher swap\n");
+        printf("After swap\n");
         printf("%d  %d\n",s->a,s->b);
 }
 int main()
