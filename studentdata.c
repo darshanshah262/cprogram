@@ -35,7 +35,7 @@ int main()
         {
                 if(rno==s[i].rollno)
                 {
-                        printf("The student,s Name Marks and Grade are:\n");
+                        printf("The student's Name Marks and Grade are:\n");
                         printf("Student %s\nMarks  %f\nGrade  %c\n",s[i].name,s[i].marks,s[i].grade);
                         break;
                 }
