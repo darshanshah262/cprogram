@@ -1,16 +1,20 @@
 #include<stdio.h>
+void swaap(int *a,int *b);
 int main()
 {
-        int *a,*b,x,y,temp;
+        int x,y;
         printf("Enter the values of A and B\n");
         scanf("%d%d",&x,&y);
-        a=&x;
-        b=&y;
         printf("Before Swap\n");
-        printf("%d  %d",*a,*b);
+        printf("%d  %d",x,y);
+        swaap(&x,&y);
+        printf("After Swap\n");
+        printf("%d  %d",x,y);
+}
+void swaap(int *a, int *b)
+{
+        int temp;
         temp=*a;
         *a=*b;
         *b=temp;
-        printf("After Swap\n");
-        printf("%d  %d",*a,*b);
 }
