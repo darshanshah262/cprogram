@@ -20,6 +20,7 @@ int main()
         for(i=0;i<n;i++)
         {
                 sumstd=sumstd+pow((*ptr-mean),2);
+                ptr++;
         }
         std=sqrt(sumstd/n);
         printf("Sum=%.3f\n",sum);
