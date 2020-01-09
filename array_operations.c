@@ -76,13 +76,13 @@ void main()
                n=insert_at_pos(item,a,n,pos);
                break;
         case 4: printf("enter the position\n");
-                 scanf("%d",&pos);
-                 n=delete_at_pos(a,n,pos);  
-                 break;
+                scanf("%d",&pos);
+                n=delete_at_pos(a,n,pos);  
+                break;
          case 5:exit(0);
                 break;
          default:printf("invalid choice\n");
-                  break;
+                 break;
     }
   }
 }
